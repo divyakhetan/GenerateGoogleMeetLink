@@ -19,7 +19,7 @@ from twilio.rest import Client
 
 
 credentials = pickle.load(open("token.pkl", "rb"))
-print(credentials)
+# print(credentials)
 
 service = build("calendar", "v3", credentials=credentials)
 
@@ -67,8 +67,8 @@ service.events().insert(calendarId=calendar_id, conferenceDataVersion=1, body=ev
 result = service.events().list(calendarId=calendar_id).execute()
 no_of_enteries = len(result['items'])
 link = result['items'][no_of_enteries - 1]['hangoutLink']
-pprint(result['items'][no_of_enteries - 1])
-print('Today link is: ', link)
+# pprint(result['items'][no_of_enteries - 1])
+print(link)
 
 
 account_sid = account_sid
