@@ -4,3 +4,5 @@ Here's a one click solution for the same!
 Setup and authentiate email id - python setup.py
 (Setting up is a one time process)
 Execute this script using - python index.py
+
+Used the Google Calendar API to generate a new event and extacted the Meet Link from the same!
